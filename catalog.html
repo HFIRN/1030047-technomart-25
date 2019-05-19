@@ -29,7 +29,7 @@
     <ul class="user-navigation">
       <li class="my-order"><a href="#">Мои заказы</a></li>
       <li class="personal-account"><a href="#">Личный кабинет</a></li>
-      <li class="exit"><button type="button">Выход</button></li>
+      <li class="exit"><a href="#">Выход</a></li>
     </ul>
     <nav class="main-navigation">
       <ul class="main-navigation-menu">
@@ -50,13 +50,15 @@
       <li><a href="#">Инструменты</a></li>
       <li class="breadcrumbs-current">Перфораторы</li>
     </ul>
+    <form class="filter-producer" action="https://echo.htmlacademy.ru" method="get">
     <div class="filter-product">
       <div class="filter_price">
         <h4>Фильтр:</h4>
         <label for="filter-price">Цена:</label>
         0<input type="range" min="0" max="30000" step="3000" id="filter-price">30000
       </div>
-      <fieldset class="filter-producer">
+      <div class="filter-manfacuring">
+      <fieldset>
         <legend>Производители:</legend>
         <ul class="manufactured">
           <li><label><input type="checkbox" checked>Bosh</label></li>
@@ -66,16 +68,19 @@
           <li><label><input type="checkbox">Hitachi</label></li>
         </ul>
       </fieldset>
-      <fieldset class="filter-power">
+    </div>
+    <div class="filter-power">
+      <fieldset>
         <legend>Типы питания:</legend>
         <ul class="power">
           <li><label><input type="radio" name="power" value="rechargeable" checked>Аккумуляторные</label></li>
           <li><label><input type="radio" name="power" value="networking">Сетевые</label></li>
         </ul>
       </fieldset>
-      <button type="button">Показать</button>
     </div>
-    <!--блок с сортировкой товара по цене по типу и функционалу-->
+      <button type="submit">Показать</button>
+    </form>
+    <!--dвертикальный блок с сортировкой товара по цене по типу и функционалу-->
     <div class="sorting">
       <h4>Сортировка:</h4>
       <ul>
