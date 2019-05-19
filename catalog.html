@@ -12,7 +12,7 @@
       </a>
     </div>
     <div class="search_main">
-      <button type="submit" name="search">Поиск</button>
+      <button type="button" name="search">Поиск</button>
       <input type="search" name="search" autofocus>
     </div>
     <div class="bookmarks"><a href="#">Закладки:</a></div>
@@ -29,7 +29,7 @@
     <ul class="user-navigation">
       <li class="my-order"><a href="#">Мои заказы</a></li>
       <li class="personal-account"><a href="#">Личный кабинет</a></li>
-      <li class="exit">Выход</li>
+      <li class="exit"><button type="button">Выход</button></li>
     </ul>
     <nav class="main-navigation">
       <ul class="main-navigation-menu">
@@ -52,32 +52,32 @@
     </ul>
     <div class="filter-product">
       <div class="filter_price">
-        <h5>Фильтр:</h5>
+        <h4>Фильтр:</h4>
         <label for="filter-price">Цена:</label>
         0<input type="range" min="0" max="30000" step="3000" id="filter-price">30000
       </div>
-      <div class="filter-producer">
-        <h4>Производители:</h4>
+      <fieldset class="filter-producer">
+        <legend>Производители:</legend>
         <ul class="manufactured">
-          <li><input type="checkbox" checked>Bosh</li>
-          <li><input type="checkbox">Интерскол</li>
-          <li><input type="checkbox" checked>Makita</li>
-          <li><input type="checkbox">Dewalt</li>
-          <li><input type="checkbox">Hitachi</li>
+          <li><label><input type="checkbox" checked>Bosh</label></li>
+          <li><label><input type="checkbox">Интерскол</label></li>
+          <li><label><input type="checkbox" checked>Makita</label></li>
+          <li><label><input type="checkbox">Dewalt</label></li>
+          <li><label><input type="checkbox">Hitachi</label></li>
         </ul>
-      </div>
-      <div class="filter-power">
-        <h4>Типы питания:</h4>
+      </fieldset>
+      <fieldset class="filter-power">
+        <legend>Типы питания:</legend>
         <ul class="power">
-          <li><input type="radio" name="power" value="rechargeable" checked>Аккумуляторные</li>
-          <li><input type="radio" name="power" value="networking">Сетевые</li>
+          <li><label><input type="radio" name="power" value="rechargeable" checked>Аккумуляторные</label></li>
+          <li><label><input type="radio" name="power" value="networking">Сетевые</label></li>
         </ul>
-      </div>
+      </fieldset>
       <button type="button">Показать</button>
     </div>
     <!--блок с сортировкой товара по цене по типу и функционалу-->
     <div class="sorting">
-      <h5>Сортировка:</h5>
+      <h4>Сортировка:</h4>
       <ul>
         <li>По цене</li>
         <li>По типу</li>
@@ -97,7 +97,7 @@
               <span class="old-price">22500 Р.</span>
               <p class="red-price-button">15500 Р.</p>
             </a>
-            <p class="buy-button"><a href="#">Купить</a></p><!--Сылка в корзину-->
+            <p class="buy-button"><a href="#">Купить</a></p><!--Сcылка в корзину-->
             <button class="inbookmarks" type="button">В закладки</button>
           </li>
 
@@ -256,5 +256,12 @@
                           <a class="button" href="https://htmlacademy.ru">htmlacademy.ru</a>
                         </p>
                       </footer>
+                      <!-- модальное окно с успешным доваление товара в корзину-->
+                      <div class="modal-basket">
+                        <p>Товар добавлен в корзину!</p>
+                        <button class="red-button" type="submit">Оформить заказ</button><!-- наверно это нужно сделать ссылкой, а не кнопкой?-->
+                        <button class="button-buy" type="button">Продолжить покупки</button>
+                        <button class="modal-close" type="button">Закрыть</button>
+                      </div>
                     </body>
                     </html>

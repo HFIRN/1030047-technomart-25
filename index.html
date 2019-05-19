@@ -11,8 +11,10 @@
         <img src="img/logo-technomart.svg" width="220" height="47" alt="Логотип Техномарт">
       </a>
     </div>
-    <button type="submit" name="search">Поиск</button>
-    <input type="search" name="search">
+    <div class="search_main">
+      <button type="button" name="search">Поиск</button>
+      <input type="search" name="search" autofocus>
+    </div>
     <div class="bookmarks">
       <a href="my-bookmarks.html">Закладки:</a>
     </div>
@@ -162,7 +164,7 @@
                 <li><a href="#">Гарантия</a></li>
                 <li><a href="#">Кредит</a></li>
               </ul>
-            </secion>
+            </section>
             <!--Доставка-->
             <section class="service-delivery">
               <h5 class="service-item">Доставка</h5>
@@ -170,7 +172,7 @@
                 к вашему подъезду совершенно бесплатно!
                 Ведь мы неплохо заработаем,
               поднимая его на ваш этаж!</p>
-              <img src="" width="468" height="261" alt="Изображение красивого грузовика">
+              <img src="img/img.png" width="468" height="261" alt="Изображение красивого грузовика">
             </section>
             <!--Гарантии-->
             <section class="service-guaranty">
@@ -178,14 +180,14 @@
               <p>Если купленный у нас товар поломается или заискрит, 
                 а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
               Дом уж восстановите как-нибудь сами.</p>
-              <img src="" width="389" height="283" alt="Изображение 100% гарантии">
+              <img src="img/img.png" width="389" height="283" alt="Изображение 100% гарантии">
             </section>
             <!--Кредит-->
             <section class="service-credit">
               <h5 class="service-item">Доставка</h5>
               <p>Залезть в долговую яму стало проще! 
               Кредитные консультанты придут вам на помощь.</p>
-              <img src="" width="465" height="285" alt="Изображение денег и договора">
+              <img src="img/img.png" width="465" height="285" alt="Изображение денег и договора">
             </section>
 
             <section class="advantages">
@@ -255,10 +257,30 @@
           </section>
           <section class="modal modal-form">
             <h4 class="visually-hidden">Написать письмо</h4>
-            <p>Ваше имя:</p>
-            <p>Ваш e-mail:</p>
-            <p>Текс письма</p>
-            <span class="modal-close">x</span>
+            <form class="form-mail-send" action="#" method="post">
+              <p>
+                <label>
+                  Ваше имя:
+                  <input class="form-name" type="text" name="name" placeholder="Имя Фамилия">
+                </label>
+              </p>
+
+              <p>
+                <label>
+                  Ваш e-mail:
+                  <input class="form-mail" type="text" name="e-mail" placeholder="email@example.com" required>
+                </label>
+              </p>
+
+              <p>
+                <label>
+                  Текс письма:
+                  <textarea name="text" rows="5" cols="30">В свободной форме</textarea>
+                </label>
+              </p>
+              <button class="modal-send" type="submit">Отправить</button>
+              <button class="modal-close" type="button">Закрыть</button>
+            </form>
           </section>
         </body>
         </html>
