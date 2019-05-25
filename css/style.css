@@ -1,0 +1,551 @@
+body {
+	margin: 0;
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+a { 
+	text-decoration: none;
+}
+
+.logo {
+	background-color: #ee3643;
+	width: 220px;
+	text-align: center;
+	padding: 13px 56px 13px 55px;
+	box-shadow: inset 0px -5px 0px 0px #ba2732;
+}
+
+
+.logo:hover {
+	background-color: #ca2c37;
+}
+
+.logo:active {
+	background-color: #ba2732; /*КЛИК КРОМЕ ПОИСКА, ДОБАВИТЬ ПОЗЖЕ(КОГДА УЗНАЮ КАК ЭТО!)*/
+}
+
+
+.main-header { /* фон для хедера*/
+	background-color: #293449;
+}
+.main-header a{ /*ссылки: корзина, поиск, оформить заказ, закладки*/
+	font-family: 'Cuprum', Arial, sans-serif;
+	font-size: 17px;
+	line-height: 18px;
+	color: #ffffff;
+}
+
+
+
+.order-registration { /* оформление заказа*/
+	background-color: #63a63e;
+	width: 150px;
+	text-align: center;
+}
+
+.order-registration:hover {
+	background-color: #5fbb2d;
+}
+
+.order-registration:active {
+	background-color: #518534;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-header { /*фон для хедера и навигации*/
+	background-color: #f4f7f9;
+}
+
+.headline { /*заголовок*/
+	font-weight: normal;
+	font-family: 'Cuprum', Arial, sans-serif;
+	font-style: italic;
+	font-size: 16px;
+	line-height: 23px;
+	color: #ee3643;
+	width: 197px;
+}
+
+.adress { /*общие стили для блока с адресом*/
+	font-family: 'Cuprum', Arial, sans-serif;
+	color: #32425c;
+	text-align: center;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.adress a { /* стили для телефона*/
+	font-family: 'Cuprum', Arial, sans-serif;
+	color: #ee3643;
+	line-height: 21px;
+	font-size: 21px;
+	font-style: normal;
+} 
+
+.adress p { /*стили для адреса*/
+	font-style: normal;
+}
+
+.user-navigation a { /* личный кабинет:войти и регистрация*/
+	color: #000000;
+}
+
+.user-navigation a:hover {
+	color: #ee3643;
+}
+
+.user-navigation a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+.main-navigation-menu,
+.user-navigation {
+	list-style: none;
+}
+
+.container-nav { /* контейнер для меню навигации*/
+	background-color: #32425c;
+	width: 127px;
+}
+
+.container-nav:hover {
+	background-color: #293449;
+}
+
+.container-nav a:active {
+	color: rgba(255, 255, 255, 0.5);
+}
+.enter { /*контейнер для входа*/
+	background-color: #ffffff;
+	width: 121px;
+}
+
+.registration { /* контейнер для регистрации*/
+	background-color: #ffffff;
+	width: 150px;
+}
+
+.main-navigation { /*главная навигация-фон и ширина, тень*/
+	background-color: #32425c;
+	width: 940px;
+	box-shadow: 0px -5px 0px 0px #293449 inset;
+}
+
+.Navigation-add { /* стили для блоков вокруг слайда*/
+	font-family: 'Cuprum', Arial, sans-serif;
+	color: #ffffff;
+	font-weight: bold;
+	width: 300px;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.material {
+	background-color: #ffbf47;
+}
+
+.tooling {
+	background-color: #3bbce3;
+}
+
+.technique {
+	background-color: #dc91d8;
+}
+
+.discount {
+	background-color: #8ed78f;
+}
+
+.delivery {
+	background-color: #ffc047;
+}
+
+.Navigation-add a{
+	font-family: 'Cuprum', Arial, sans-serif;
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.opacity {
+	width: 135px;
+	background-color: #000000;
+	opacity:0.1;
+	border-radius: 3px;
+}
+
+.opacity:hover {
+	opacity:0.2;
+}
+
+.opacity:active {
+	opacity:0.3;          /* НЕ МОГУ ДОБИТЬСЯ ТОГО, ЧТО ЦВЕТ ССЫЛКИ ОСТАВАЛСЯ БЕЛЫМ, ЧТО БЫ ОПАСИТИ НЕ ТРОГАЛО ЕГО*/
+}
+
+.popular-products, /* фон для заголовков популярных товаров и производителей*/
+.popular-manufacturer,
+.perforator-products {
+	background-color: #f9f5f0;
+	width: 940px;
+}
+
+.hsecond-level { /*для заголовков: популярные товары, популярные производители, кредит, доставка, гарантия*/
+	font-family: 'Cuprum', Arial, sans-serif;
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: #32425c;
+}
+
+.button-red { /*один стиль на для всех красных кнопкок и ссылок с белыми надписями*/
+	font-family: 'Cuprum', Arial, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #ffffff;
+	/*background-color: #ee3643;*/
+}
+
+.popular-perforators { /*убирает маркеры у списка популярных товаров*/
+	list-style: none;
+}
+
+.catalog-item h3 { /*название товаров на карточке товаров*/
+	color: #000000;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: bold;
+}
+
+.old-price { /* кнопка со старой зачеркнутой ценой на карточках товаров*/
+	text-decoration: line-through;
+	color: #a9a9a9;
+	width: 67px;
+}
+
+.red-price-button { /* красная цена кнопка на карточках товара(должна быть стрелкой далее...)*/
+	background-color: #ee3643; 
+	color: #ffffff;
+	width: 65px;
+	text-align: center;
+}
+
+.buy-button a { /* кнопка купить на карточках товара*/
+	font-family: 'Cuprum', Arial, sans-serif;
+	font-style: normal;
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.buy-button { /* контейнер для зеленой кнопки*/
+	width: 135px;
+	background-color: #63a63e;
+	border-radius: 3px;
+	text-align: center;
+	box-shadow: inset 0 -3px 0 0 #367315;
+}
+
+.buy-button:hover { /*наведеие на кнопку купить на карточках товара*/
+	background-color:#5fbb2d;
+}
+
+.buy-button:active { /*активная кнопка купить на карточках товара*/
+	background-color: #518534;
+	box-shadow: none;
+}
+
+.inbookmarks { /*кнопка "в закладки" на обороте карточек товаров */
+font-family: 'Cuprum', Arial, sans-serif;
+background-color: #ffffff;
+width: 135px;
+border: 3px solid #63a63e;
+color: #32425c;
+border-radius: 3px;
+}
+
+.inbookmarks:hover { /*наведение на кнопку в закладки на карточках товаров */
+	background-color: #ffffff;
+	width: 135px;
+	border: 3px solid #32425c;
+	color: #32425c;
+}
+
+.inbookmarks:active { /*активная кнопка в закладки на карточках товаров*/
+	background-color: #ffffff;
+	width: 135px;
+	border: 3px solid rgba(50, 66, 92, 0.3);
+	color: rgba(50, 66, 92, 0.3);
+}
+
+.manufacturer-list li{ /*убирает маркеры со списка популярные производителей,Делает рамку для каждого и ширину*/
+	list-style: none;
+	border: 1px solid #eaeaea;
+	width: 154px; 
+}
+
+.manufacturer-list li:hover { /* действия для карточек популярных производителей*/
+box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.manufacturer-list li:active { /* действия для карточек популярных производителей*/
+box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
+}
+
+.servises { /* фон для блока с сервисами (достаква,кредит,гарантии)*/
+	background-color: #f4f7f9;
+
+}
+
+.catalog-perforators li { /* убирает маркеры у списка с товара в кталоге*/
+	list-style: none;
+}
+
+.servises p { /* стиль текста в блоках про сервис*/
+	font-size: 13px;
+	line-height: 24px;
+}
+
+.service-back p { /* размер контейнера для текста про сервис*/
+	width: 398px;
+}
+
+.hsecond-black { /* стили заголовков черных: пара слов о перфораторах, сервисы,компания техномарт, контакты*/
+	font-family: 'Cuprum', Arial, sans-serif;
+	line-height: 30px;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+.container-red-button-catalog { /*контейнер для кнопки открыть каталог*/
+	width: 195px;
+	background-color: #ee3643;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.container-red-button-popgoods { /*контейнер для кнопки популярные товары*/
+	width: 253px;
+	background-color: #ee3643;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.about-perforators-block { /* контейнер для текста о перфораторах в каталоге*/
+	width: 938px;
+}
+
+.footer-logo { /*логотип в футуре*/
+	background-color: #ee3643;
+	width: 220px;
+	text-align: center;
+	padding: 20px 41px 25px 41px;
+	box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.24);
+}
+
+.footer-address { /* стили для адреса в футуре*/
+	font-family: 'Cuprum', Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	color: #f1f5f7;
+	font-style: normal;
+}
+
+.footer-address a { /*дополнительная замена цвета для телефона*/
+	color: #f1f5f7;
+
+}
+.footer-nav { /*фон для блока с навигацией в футуре*/
+	background-color: #32425c;
+}
+
+.footer-nav li { /* снимает маркеры со списков в футере*/
+	list-style: none;
+}
+
+.footer-navigation a{ /*стили для навигации в футуре*/
+	color: #f1f5f7;
+	font-family: 'Cuprum', Arial, sans-serif;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.footer-navigation a:hover{ /* наведение навигация в футуре*/
+	text-decoration: underline;
+}
+
+.footer-navigation a:active{ /*нажатая навигация в футуре*/
+	text-decoration: none;
+	color: rgba(241, 245, 247, 0.5);
+}
+
+.footer-sections a { /* дополнительная навигация по товарам и услугам в футуре*/
+	color: #ffd180;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.footer-sections a:hover {
+	text-decoration: underline;
+}
+
+.footer-sections a:active {
+	text-decoration: none;
+	corol:rgba(255, 209, 128, 0.5)
+}
+
+.footer-contacts { /* фон для блока с контактами в футуре*/
+	background-color: #293449;
+}
+
+.copyright { /* стили для текста о копирайте*/
+	font-size: 16px;
+	line-height: 18px;
+	color: #ffffff;
+}
+
+.link-back,
+.link-developer { /*ссылки на разработчика в футуре и обратная связь*/
+	font-family: 'Cuprum', Arial, sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+	color: #ffffff;
+	font-weight: normal;
+}
+
+.link-back a, /* cтили для ссылок для ссылок) в футуре*/
+.link-developer a {
+	font-family: 'Cuprum', Arial, sans-serif;
+	color: #ffd180;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: normal;
+}
+
+.link-back a:hover,
+.link-developer a:hover {
+	text-decoration: underline;
+}
+.link-back a:active,
+.link-developer a:active {
+	text-decoration: none;
+	color: #ee3643;
+}
+
+.footer-social li{ /* отменяет маркеры у списка с социальными сетями*/
+	list-style: none;
+}
+
+.footer-social a { /* цвет для ссылок на соц сети*/
+	color: #ffffff;
+}
+
+.vk-container,
+.fb-container,
+.twr-container { /* стили для контейнера для соц сетей*/
+	background-color: #212a3a;
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+}
+
+.vk-container:hover,
+.fb-container:hover,
+.twr-container:hover,
+.vk-container:active,
+.fb-container:active,
+.twr-container:active {
+	background-color: #ee3643;
+}
+
+.transport li{ /* стили для списка:Деловые линии, Автотрейд, ЖелДор*/
+  list-style: none;
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #00000;
+}
+ /* ЗДЕСЬ СДЕЛАТЬ КРАСНЫЕ ЛИНИИ ПЕРЕД СПИСКОМ ВЫШЕ, НО КАК????*/
+
+.breadcrumbs,  
+.filter-manfacuring li,
+.filter-power li,
+.sorting li,
+.user-navigation-enter { /* убираю все маркеры у списков в каталоге*/
+ list-style: none;
+}
+
+.breadcrumbs a { /* стили для ссылок в хлебных крошках в каталоге*/
+	font-size: 13px;
+	line-height:  18px;
+	color: #000000;
+	font-weight: normal;
+}
+
+.h-filter { /* заголовок для фильтр:, сортировка: цуна,по типу, по функционалу И СТИЛИ ДЛЯ КОНТЕЙНЕРА*/
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #000000;
+	background-color: #f7f3ec;
+	width: 220px;
+} 
+
+.filter-price { /* стили для ЦЕНА: в каталоге*/
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 30px;
+	font-style: normal;
+
+}
+
+.h-legend { /* стили для заголовков -- Производители: Питание: в каталоге*/
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+.filter-manfacuring fieldset, /* убираю рамки с сортировки по производителям и питанию в каталоге*/
+.filter-power fieldset {
+	border: none;
+}
+
+.filter-manfacuring, /* делаю рамку сверху над пунктами сортировки  в каталоге */
+.filter-power {   
+   border-top: solid 1px #c5c5c5;
+   width: 220px;
+   font-size: 15px;
+   line-height: 20px;
+   font-weight: normal;
+   color: #000000;
+   text-transform: uppercase;  /*стили для текста в чекбоксе и радиобатон*/
+}
+
+.user-navigation-enter a{ /* стили для ссылок личного кабинета в каталоге*/
+	font-size: 16px;
+	line-height: 18px;
+	text-decoration: underline;
+	color: #32425c;
+    font-weight: normal;
+ }
+
+.user-navigation-catalog { /* стили для контейнера личного кабинета в кабинета*/
+background-color: #ffffff;
+width: 299px;
+}
+
+.user-navigation-catalog a { /* стили для имени в кабинете личном в каталоге*/
+	font-family: 'Cuprum', Arial, sans-serif;
+	color: #000000;
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: normal;
+}
