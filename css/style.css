@@ -136,7 +136,7 @@ a {
 	box-shadow: 0px -5px 0px 0px #293449 inset;
 }
 
-.Navigation-add { /* стили для блоков вокруг слайда*/
+.navigation-add { /* стили для блоков вокруг слайда*/
 	font-family: 'Cuprum', Arial, sans-serif;
 	color: #ffffff;
 	font-weight: bold;
@@ -165,7 +165,7 @@ a {
 	background-color: #ffc047;
 }
 
-.Navigation-add a{
+.navigation-add a{
 	font-family: 'Cuprum', Arial, sans-serif;
 	color: #ffffff;
 	font-size: 14px;
@@ -176,17 +176,17 @@ a {
 
 .opacity {
 	width: 135px;
-	background-color: #000000;
-	opacity:0.1;
+	background-color: rgba(0,0,0,0.1);
 	border-radius: 3px;
+	color: #ffffff;
 }
 
 .opacity:hover {
-	opacity:0.2;
+	background-color: rgba(0,0,0,0.2);
 }
 
 .opacity:active {
-	opacity:0.3;          /* НЕ МОГУ ДОБИТЬСЯ ТОГО, ЧТО ЦВЕТ ССЫЛКИ ОСТАВАЛСЯ БЕЛЫМ, ЧТО БЫ ОПАСИТИ НЕ ТРОГАЛО ЕГО*/
+	background-color: rgba(0,0,0,0.3);         /* НЕ МОГУ ДОБИТЬСЯ ТОГО, ЧТО ЦВЕТ ССЫЛКИ ОСТАВАЛСЯ БЕЛЫМ, ЧТО БЫ ОПАСИТИ НЕ ТРОГАЛО ЕГО*/
 }
 
 .popular-products, /* фон для заголовков популярных товаров и производителей*/
@@ -388,6 +388,7 @@ box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
 
 .footer-sections a { /* дополнительная навигация по товарам и услугам в футуре*/
+	font-family: 'Cuprum', Arial, sans-serif;
 	color: #ffd180;
 	font-size: 18px;
 	line-height: 24px;
