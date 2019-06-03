@@ -1,4 +1,5 @@
 body {
+	min-width: 960px;
 	margin: 0;
 	font-family: 'PT Sans', Arial, sans-serif;
 	font-size: 13px;
@@ -11,6 +12,13 @@ body {
 
 a { 
 	text-decoration: none;
+}
+
+.container {
+width: 940px;
+padding-left: 10px;
+padding-right: 10px;
+margin: 0 auto;
 }
 
 .logo {
@@ -584,9 +592,7 @@ margin-bottom: 86px;
 
 /* СЕТКА СЕТКА СЕТКА*/
 
-
-
-
+.container
 .wrapper-mainheader { /*котейнер для шапки с логотипом, закладками и корзиной и поиском*/
 	display: flex;
 	align-items: center;
@@ -810,14 +816,23 @@ min-height:1636px;
 	}
 
 	.catalog-list { /*контейнер для карточек товаров*/
-		display: flex;
-		justify-content: space-between;
+		/*display: flex;
+		justify-content: space-between;*/
      width: 700px;
      min-height: 995px;
      /**/
 	}
 	.catalog-item { /*контейнеры для списков с товарами в сетке*/
+
     width: 220px;
     min-height: 317px;
     margin-bottom: 20px;
+	}
+
+	.wrapper {
+		background-color: rgba(255, 0, 0, 0.2);
+	}
+
+	.pagination-list {
+		list-style: none;
 	}
