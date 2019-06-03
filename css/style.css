@@ -15,9 +15,9 @@ a {
 
 .logo {
 	background-color: #ee3643;
-	width: 220px;
+	width: 90px;
 	text-align: center;
-	padding: 13px 56px 13px 55px;
+	padding: 13px 53px 13px 53px;
 	box-shadow: inset 0px -5px 0px 0px #ba2732;
 }
 
@@ -32,7 +32,7 @@ a {
 
 
 .main-header { /* фон для хедера*/
-	background-color: #293449;
+	background-color: #f4f7f9;
 }
 .main-header a{ /*ссылки: корзина, поиск, оформить заказ, закладки*/
 	font-family: 'Cuprum', Arial, sans-serif;
@@ -75,7 +75,7 @@ a {
 .adress { /*общие стили для блока с адресом*/
 	font-family: 'Cuprum', Arial, sans-serif;
 	color: #32425c;
-	text-align: center;
+	/*text-align: center;*/
 	font-size: 14px;
 	line-height: 24px;
 }
@@ -86,6 +86,8 @@ a {
 	line-height: 21px;
 	font-size: 21px;
 	font-style: normal;
+	border: 3px solid #ffffff;
+	padding: 10px 47px;
 } 
 
 .adress p { /*стили для адреса*/
@@ -112,6 +114,7 @@ a {
 	background-color: #32425c;
 	width: 127px;
 }
+
 
 .container-nav:hover {
 	background-color: #293449;
@@ -186,7 +189,7 @@ a {
 }
 
 .opacity:active {
-	background-color: rgba(0,0,0,0.3);         /* НЕ МОГУ ДОБИТЬСЯ ТОГО, ЧТО ЦВЕТ ССЫЛКИ ОСТАВАЛСЯ БЕЛЫМ, ЧТО БЫ ОПАСИТИ НЕ ТРОГАЛО ЕГО*/
+	background-color: rgba(0,0,0,0.3);        
 }
 
 .popular-products, /* фон для заголовков популярных товаров и производителей*/
@@ -210,7 +213,8 @@ a {
 	line-height: 18px;
 	text-transform: uppercase;
 	color: #ffffff;
-	/*background-color: #ee3643;*/
+	background-color: #ee3643;
+	border-radius: 2px;
 }
 
 .popular-perforators { /*убирает маркеры у списка популярных товаров*/
@@ -304,8 +308,12 @@ box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
 
 }
 
-.catalog-perforators li { /* убирает маркеры у списка с товара в кталоге*/
+.catalog-item { /* убирает маркеры у списка с товара в кталоге*/
 	list-style: none;
+	border: solid 1px #e5e5e5;
+}
+.catalog-item:hover { /* тень при наведении на карточку товара*/
+ box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .servises p { /* стиль текста в блоках про сервис*/
@@ -322,6 +330,11 @@ box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
 	line-height: 30px;
 	font-size: 30px;
 	text-transform: uppercase;
+}
+
+.hsecond-black p {
+   font-size: 13px;
+   line-height: 24px;
 }
 
 .container-red-button-catalog { /*контейнер для кнопки открыть каталог*/
@@ -346,7 +359,8 @@ box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
 	background-color: #ee3643;
 	width: 220px;
 	text-align: center;
-	padding: 20px 41px 25px 41px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.24);
 }
 
@@ -408,6 +422,7 @@ box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
 
 .copyright { /* стили для текста о копирайте*/
+	font-family: 'Cuprum', Arial, sans-serif;
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffffff;
@@ -471,8 +486,8 @@ box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
   list-style: none;
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 18px;
-  line-height: 20px;
-  color: #00000;
+  line-height: 2;
+  color: #000000;
 }
  /* ЗДЕСЬ СДЕЛАТЬ КРАСНЫЕ ЛИНИИ ПЕРЕД СПИСКОМ ВЫШЕ, НО КАК????*/
 
@@ -489,6 +504,7 @@ box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
 	line-height:  18px;
 	color: #000000;
 	font-weight: normal;
+text-transform: uppercase;
 }
 
 .h-filter { /* заголовок для фильтр:, сортировка: цуна,по типу, по функционалу И СТИЛИ ДЛЯ КОНТЕЙНЕРА*/
@@ -550,3 +566,258 @@ width: 299px;
 	line-height: 21px;
 	font-weight: normal;
 }
+
+.button-company {/*кнопка о компании техномарт перед футером*/
+ padding: 10px 40px;
+ margin-bottom: 86px;
+
+}
+
+.button-contacts { /*кнопка "заблудились,напишите"*/
+padding: 10px 60px;
+margin-bottom: 86px;
+}
+
+.transport {/* отступ от списка транспортных компаний до кнопки*/
+ margin-bottom: 35px;
+}
+
+/* СЕТКА СЕТКА СЕТКА*/
+
+
+
+
+.wrapper-mainheader { /*котейнер для шапки с логотипом, закладками и корзиной и поиском*/
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+    margin: 0;
+	padding: 0 130px ;
+	background-color: #293449;
+	margin-bottom: 41px;
+	margin-left: auto;
+}
+
+.nav-header { /*размеры контйнера для заголовка 1*/
+ 	width: 300px;
+ 	padding-left: 50px;
+ }
+
+.adress { /*размеры для контейнера адреса и телефона*/
+	display: flex;
+	 align-self: center;
+	width: 340px;
+	margin-left: 30px;
+
+}
+
+.user-navigation { /*размеры для контнейнера личного кабинета*/
+	display: flex;
+	justify-content: space-between;
+	width: 310px;
+	align-self: flex-end;
+}
+ .container-headline { /*контейнер для блока с заголовком адресом и личным кабинетом*/
+   display: flex;
+   width: 940px;
+   margin: 0;
+   padding: 0 130px;
+   margin-bottom: 44px;
+}
+
+.main-navigation { /* главная навигация контейнер*/
+	display: flex; 	
+	width: 940px;
+	/**/
+	min-height: 55px;
+}
+
+.main-navigation-menu {
+	display: flex;
+}
+.container-main-navigaion {
+	padding: 0 130px;
+}
+.main-header{
+	padding-bottom: 60px;
+}
+
+.container-advantages-contacts { /*контейнер для блока с о компании и контактами с картой*/
+display: flex;
+padding: 0;
+margin: 0;
+padding-bottom: 86px;
+}
+
+.advantages {
+	width: 519px;
+	margin: 0;
+	padding: 0;
+	margin-left:130px;
+	margin-top: 75px;
+	/**/
+	min-height: 377px;
+}
+
+.contacts {
+	width: 300px;
+	margin: 0;
+	padding: 0;
+	margin-left: 120px;
+	margin-top: 74px;
+	/**/
+	min-height: 376px;
+}
+.contacts img {
+	margin-bottom: 40px;
+}
+
+.footer-nav {
+	display: flex;
+    flex-direction: column;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 0;
+	/**/
+	min-height: 196px;
+}
+
+.footer-logo {
+	margin-left: 130px;
+}
+
+.footer-address {
+	margin-top: 27px;
+	margin-left: 129px;
+	width: 335px;
+	/**/
+	min-height:46px;
+}
+
+	.footer-navigation {
+		width: 550px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 0;
+		margin: 0;
+		margin-top: -110px;
+		margin-left: 520px;
+		/**/
+		min-height: 30px;
+		
+	} 
+
+	.footer-sections {
+		width: 528px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 0;
+		margin: 0;
+		margin-left: 546px;
+		margin-top: 30px;
+		/**/
+		min-height: 28px;
+	}
+
+	.footer-contacts {
+		margin: 0;
+		padding: 0;
+	}
+
+	.footer-contacts-social {
+		padding: 0;
+		margin: 0;
+		width:; 
+		/**/
+		min-height:;
+	}
+
+	.footer-contacts { /* контейнер для вторго подвала */
+     display: flex;
+     /**/
+     min-height: 108px;
+	}
+
+	.copyright { /* контейнер для копирайта в футере*/
+		margin-left: 129px;
+		margin-right: 160px;
+		margin-top: 39px;
+		width: 220px;
+		/**/
+		min-height: 40px;
+	}
+
+	.footer-social { /*контейнер для социальных кнопок*/
+	
+	padding:0;
+	margin: 0;
+	width: 136px;
+	min-height: 47px;
+	margin-right: 115px;
+	}
+
+	.link-back { /* контейнер с имэйл академии в футуре*/
+		margin-right: 46px;
+     width: 140px;
+    /**/
+     min-height: 36px;
+	}
+
+	.link-developer { /* контейнер с ссылкой на академию*/
+     width: 114px;
+     /**/
+     min-height: 46px;
+	}
+
+	.user-navigation-enter {/*контенер для блока в личном кабинете в каталоге мои заказы, личны кабинет*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:0;
+    padding: 0;
+    margin-top: 5px;
+    width: 246px;
+    /**/
+    min-height:35px;
+    }
+    .container {
+/**/
+min-height:1636px;
+    }
+
+	.visually-hidden { /* прячем заголовок КАТАЛОГ в каталоге*/
+		visibility: hidden;
+	}
+
+	.breadcrumbs {
+		display: flex;
+		justify-content: space-between;
+		width: 360px;
+		/**/
+		min-height: 20px;
+	}
+
+	.filter-product { /*контейнер для фильтров в каталоге*/
+		margin: 0;
+		padding: 0;
+     width: 220px;
+     /**/
+     min-height: 1140px;
+     margin: 0;
+     padding: 0;
+	}
+
+	.catalog-list { /*контейнер для карточек товаров*/
+		display: flex;
+		justify-content: space-between;
+     width: 700px;
+     min-height: 995px;
+     /**/
+	}
+	.catalog-item { /*контейнеры для списков с товарами в сетке*/
+    width: 220px;
+    min-height: 317px;
+    margin-bottom: 20px;
+	}
