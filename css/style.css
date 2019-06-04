@@ -13,7 +13,7 @@ body {
 a { 
 	text-decoration: none;
 }
- 
+
 .wrapper {
 	width: 940px;
 	padding-left: 10px;
@@ -373,14 +373,6 @@ border-radius: 3px;
 	min-height:263px;
 }
 
-.first-footer {
-background-color: #32425c;
-}
-
-.second-footer {
-	background-color: #293449;
-}
-
 .footer-logo { /*логотип в футуре*/
 	background-color: #ee3643;
 	width: 220px;
@@ -402,6 +394,7 @@ background-color: #32425c;
 	color: #f1f5f7;
 
 }
+
 .footer-nav { /*фон для блока с навигацией в футуре*/
 	background-color: #32425c;
 }
@@ -440,7 +433,7 @@ background-color: #32425c;
 
 .footer-sections a:active {
 	text-decoration: none;
-	corol:rgba(255, 209, 128, 0.5)
+	color:rgba(255, 209, 128, 0.5)
 }
 
 .footer-contacts { /* фон для блока с контактами в футуре*/
@@ -820,46 +813,46 @@ margin-bottom: 86px;
 }
 
 .catalog-perforators { /*контейнер для карточек товаров*/
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		width: 700px;
-		min-height: 995px;
-		/**/
-	}
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 700px;
+	min-height: 995px;
+	/**/
+}
 
-	.catalog-perforators:nth-child(3n){
-		margin-right:0;
-	}
+.catalog-perforators:nth-child(3n){
+	margin-right:0;
+}
 
-	.catalog-item { /*контейнеры для списков с товарами в сетке*/
-		width: 220px;
-		min-height: 317px;
-		margin-bottom: 20px;
-	}
+.catalog-item { /*контейнеры для списков с товарами в сетке*/
+	width: 220px;
+	min-height: 317px;
+	margin-bottom: 20px;
+}
 
-	.wrapper {
-		background-color: rgba(255, 0, 0, 0.2);
-	}
+.wrapper {
+	background-color: rgba(255, 0, 0, 0.2);
+}
 
-	.pagination-list {
-		list-style: none;
-	}
-     .popular-products {
-     	margin-bottom: 20px;
-     }
+.pagination-list {
+	list-style: none;
+}
+.popular-products {
+	margin-bottom: 20px;
+}
 
-   .perforators {
-   	width: 940px;
-   	/**/
-   	min-height:324px;
-   }
+.perforators {
+	width: 940px;
+	/**/
+	min-height:324px;
+}
 
-   .popular-perforators {
-     padding: 0;
-     margin: 0;
-	}
+.popular-perforators {
+	padding: 0;
+	margin: 0;
+}
 
-   .popular-perforators li{
-   	margin-right: 20px;
-   }
+.popular-perforators li{
+	margin-right: 20px;
+}
