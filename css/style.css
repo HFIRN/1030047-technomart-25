@@ -13,7 +13,7 @@ body {
 a { 
 	text-decoration: none;
 }
-
+ 
 .wrapper {
 	width: 940px;
 	padding-left: 10px;
@@ -315,6 +315,9 @@ border-radius: 3px;
 	box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
 
+.features-index {
+	background-color: #f4f7f9;
+}
 .servises { /* фон для блока с сервисами (достаква,кредит,гарантии)*/
 	margin-bottom: 70px;
 	background-color: #f4f7f9;
@@ -368,6 +371,14 @@ border-radius: 3px;
 	width: 938px;
 	/**/
 	min-height:263px;
+}
+
+.first-footer {
+background-color: #32425c;
+}
+
+.second-footer {
+	background-color: #293449;
 }
 
 .footer-logo { /*логотип в футуре*/
@@ -601,11 +612,15 @@ margin-bottom: 86px;
 
 
 .wrapper-mainheader { /*котейнер для шапки с логотипом, закладками и корзиной и поиском*/
-	display: flex;
+	
 	align-items: center;
 	justify-content: space-around;
 	background-color: #293449;
 	margin-bottom: 45px;
+}
+
+.top-menu {
+	background-color: #293449;
 }
 
 .nav-header { /*размеры контйнера для заголовка 1*/
@@ -677,15 +692,10 @@ margin-bottom: 86px;
 .footer-nav {
 	flex-direction: column;
 	padding: 0;
-	margin: 0;
 	margin-top: 85px;
 	margin-bottom: 0;
 	/**/
 	min-height: 196px;
-}
-
-.footer-logo {
-	*/margin-left: 130px;*/
 }
 
 .footer-address {
