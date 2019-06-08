@@ -608,8 +608,13 @@ border-radius: 3px;
 }
 
 .user-navigation-catalog { /* стили для контейнера личного кабинета в кабинета*/
+	display: flex;
+	width: 299px;
 	background-color: #ffffff;
 	width: 299px;
+	align-items: center;
+	/**/
+	min-height: 45px; 
 }
 
 .user-navigation-catalog a { /* стили для имени в кабинете личном в каталоге*/
@@ -674,10 +679,6 @@ margin-bottom: 86px;
 	display: flex;
 	margin-bottom: 44px;
 }
-/*.main-navigation li {
-	padding-top: 20px;
-	padding-bottom: 21px;
-}*/
 
 .main-navigation-menu {
 	display: flex;
@@ -918,3 +919,8 @@ background-color: #32425c;
 	.exit {
 		background: #ffffff url("../img/icon-logout.svg") no-repeat;
 	}
+
+	.main-nav_username {
+		margin-right: 39px;
+	}
+
