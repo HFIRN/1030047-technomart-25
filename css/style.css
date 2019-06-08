@@ -27,7 +27,7 @@ a {
 
 .logo {
 	background-color: #ee3643;
-	width: 90px;
+	width: 111px;
 	text-align: center;
 	padding: 13px 53px 13px 53px;
 	box-shadow: inset 0px -5px 0px 0px #ba2732;
@@ -53,12 +53,12 @@ a {
 	color: #ffffff;
 }
 
-
-
 .order-registration { /* оформление заказа*/
 	background-color: #63a63e;
 	width: 150px;
 	text-align: center;
+	margin: 0;
+	padding: 13px 26px 8px 20px;
 }
 
 .order-registration:hover {
@@ -125,8 +125,12 @@ a {
 .container-nav { /* контейнер для меню навигации*/
 	background-color: #32425c;
 	width: 127px;
+	justify-content: space-around;
 }
 
+.container-nav li:last-child {
+	padding-right: 0;
+} 
 
 .container-nav:hover {
 	background-color: #293449;
@@ -146,6 +150,7 @@ a {
 }
 
 .main-navigation { /*главная навигация-фон и ширина, тень*/
+	display: flex;
 	background-color: #32425c;
 	width: 940px;
 	box-shadow: 0px -5px 0px 0px #293449 inset;
@@ -208,7 +213,6 @@ a {
 .popular-manufacturer,
 .perforator-products {
 	background-color: #f9f5f0;
-	width: 940px;
 }
 
 .hsecond-level { /*для заголовков: популярные товары, популярные производители, кредит, доставка, гарантия*/
@@ -301,10 +305,28 @@ border-radius: 3px;
 	color: rgba(50, 66, 92, 0.3);
 }
 
+.manufacturer-list {
+	padding: 0;
+	margin: 0;
+  flex-wrap: wrap;
+  /**/
+  min-height: 310px;
+}
+
 .manufacturer-list li{ /*убирает маркеры со списка популярные производителей,Делает рамку для каждого и ширину*/
 	list-style: none;
 	border: 1px solid #eaeaea;
-	width: 154px; 
+	height: 145px;
+	width: 220px; 
+	padding: 0;
+	margin: 0;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+
+
+.manufacturer-list li: nth-child(4n) {
+	margin-right: 0;
 }
 
 .manufacturer-list li:hover { /* действия для карточек популярных производителей*/
@@ -445,6 +467,11 @@ border-radius: 3px;
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffffff;
+
+ /*контейнер для копирайта в футуре*/
+	margin-right: 160px;
+	margin-top: 39px;
+	width: 220px;
 }
 
 .link-back,
@@ -483,21 +510,34 @@ border-radius: 3px;
 	color: #ffffff;
 }
 
+.vk-container {
+	background: #293449 url(../img/icon-vk.svg) no-repeat 50% 50%;
+}
+
+.fb-container {
+	background: #293449 url(../img/icon-fb.svg) no-repeat 50% 50%;
+}
+
+.ins-container {
+	background: #293449 url(../img/icon-insta.svg) no-repeat 50% 50%;
+}
+
 .vk-container,
 .fb-container,
-.twr-container { /* стили для контейнера для соц сетей*/
+.ins-container { /* стили для контейнера для соц сетей*/
 	background-color: #212a3a;
 	width: 42px;
 	height: 42px;
 	border-radius: 50%;
 }
 
+
 .vk-container:hover,
 .fb-container:hover,
-.twr-container:hover,
+.ins-container:hover,
 .vk-container:active,
 .fb-container:active,
-.twr-container:active {
+.ins-container:active {
 	background-color: #ee3643;
 }
 
@@ -541,12 +581,6 @@ border-radius: 3px;
 	line-height: 30px;
 	font-style: normal;
 
-}
-
-.h-legend { /* стили для заголовков -- Производители: Питание: в каталоге*/
-	font-size: 17px;
-	line-height: 30px;
-	font-weight: bold;
 }
 
 .filter-manfacuring fieldset, /* убираю рамки с сортировки по производителям и питанию в каталоге*/
@@ -610,6 +644,7 @@ margin-bottom: 86px;
 	justify-content: space-around;
 	background-color: #293449;
 	margin-bottom: 45px;
+	height: 42px;
 }
 
 .top-menu {
@@ -637,19 +672,20 @@ margin-bottom: 86px;
 }
 .container-headline { /*контейнер для блока с заголовком адресом и личным кабинетом*/
 	display: flex;
-	width: 940px;
 	margin-bottom: 44px;
 }
-
-.main-navigation { /* главная навигация контейнер*/
-	display: flex; 	
-	width: 940px;
-	/**/
-	min-height: 55px;
-}
+/*.main-navigation li {
+	padding-top: 20px;
+	padding-bottom: 21px;
+}*/
 
 .main-navigation-menu {
 	display: flex;
+}
+
+.container-nav a {
+	padding-top: 22px;
+	padding-bottom: 23px;
 }
 
 .main-header{
@@ -731,7 +767,6 @@ margin-bottom: 86px;
 .footer-contacts-social {
 	padding: 0;
 	margin: 0;
-	width:; 
 }
 
 .footer-contacts { /* контейнер для вторго подвала */
@@ -744,23 +779,17 @@ margin-bottom: 86px;
 background-color: #32425c;
 }
 
-.copyright { /* контейнер для копирайта в футере*/
-	margin-left: 129px;
-	margin-right: 160px;
-	margin-top: 39px;
-	width: 220px;
-	/**/
-	min-height: 40px;
-}
-
-.footer-social { /*контейнер для социальных кнопок*/
+.footer-social{ /*контейнер для социальных кнопок*/
 	
 	padding:0;
 	margin: 0;
 	width: 136px;
-	min-height: 47px;
 	margin-right: 115px;
 }
+
+.footer-social ul {
+	display: flex;
+	}
 
 .link-back { /* контейнер с имэйл академии в футуре*/
 	margin-right: 46px;
@@ -795,22 +824,40 @@ background-color: #32425c;
 	visibility: hidden;
 }
 
-.breadcrumbs {
-	display: flex;
-	justify-content: space-between;
-	width: 360px;
-	/**/
-	min-height: 20px;
+.filter-producer legend { /*стили для заголовка фильтров*/
+	margin-bottom: 15px;
+     font-weight: bold;
+     font-size: 17px;
+     line-height: 30px
+}
+
+.filter-producer fieldset {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 22px;
+}
+
+.filter-power {
+	margin-bottom: 75px;
 }
 
 .filter-product { /*контейнер для фильтров в каталоге*/
 	margin: 0;
 	padding: 0;
 	width: 220px;
-	/**/
-	min-height: 1140px;
 	margin: 0;
 	padding: 0;
+}
+
+.filter-manfacuring ul,
+.filter-power ul {
+	margin: 0;
+	padding: 0;
+}
+
+.filter-producer li{
+	list-style: none;
+	margin-bottom: 16px;
 }
 
 .catalog-perforators { /*контейнер для карточек товаров*/
@@ -832,8 +879,8 @@ background-color: #32425c;
 	margin-bottom: 20px;
 }
 
-.wrapper {
-	background-color: rgba(255, 0, 0, 0.2);
+/*.wrapper {
+	background-color: rgba(255, 0, 0, 0.2);*/
 }
 
 .pagination-list {
@@ -857,3 +904,17 @@ background-color: #32425c;
 .popular-perforators li{
 	margin-right: 20px;
 }
+
+.backet-full { /* корзина в каталоге*/
+	text-align: center;
+	width: 150px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 17px;
+	margin: 0;
+	background-color: #ee3643;
+	background: #ee3643 url("../img/icon-cart.svg") no-repeat 20% 40%;
+}
+	.exit {
+		background: #ffffff url("../img/icon-logout.svg") no-repeat;
+	}
