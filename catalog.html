@@ -6,7 +6,6 @@
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700/PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
   <header class="main-header">
@@ -17,11 +16,12 @@
             <img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип Техномарт">
           </a>
         </div>
+
         <div class="search_main">
           <button type="button" name="search">Поиск</button>
           <input type="search" name="search" autofocus>
         </div>
-        <div class="bookmarks"><a href="#">Закладки:</a></div>
+        <div class="bookmarks"><a href="#">Закладки: 0</a></div>
         <div class="backet backet-full"><a href="#">Корзина:10</a></div>
         <div class="order-registration"><a href="#">Оформить заказ</a></div>
       </div>
@@ -115,12 +115,14 @@
     <!--горизонтальный блок с сортировкой товара по цене по типу и функционалу-->
     <div class="column">
 
-      <h4 class="h-filter">Сортировка:</h4>
-      <ul>
-        <li class="h-filter h-sort">По цене</li>
-        <li class="h-filter h-sort">По типу</li>
-        <li class="h-filter h-sort">По функционалу</li>
-      </ul>      
+      <div class="h-filter-sort">
+      <ul class="sorting wrapper--flex">
+        <li class="h-filter wrapper--flex">Сортировка:</li>
+        <li class="h-filter h-sort sort-price"><a href="">По цене</a></li>
+        <li class="h-filter h-sort sort-type"><a href="">По типу</a></li>
+        <li class="h-filter h-sort sort-finctional"><a href="">По функционалу</a></li>
+      </ul>
+      </div> 
 
       <section class="catalog-perforators-list">
         <h2 class="visually-hidden">Каталог товаров</h2>

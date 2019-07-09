@@ -31,7 +31,7 @@ a {
 	width: 115px;
 	text-align: center;
 	padding: 20px 53px 6px 53px;
-	box-shadow: inset 0px -5px 0px 0px #ba2732;
+	box-shadow: inset 0 -5px 0 0 #ba2732;
 }
 
 
@@ -74,7 +74,7 @@ a {
 	background: transparent;
 }
 .bookmarks a{
-	padding-right: 90px;
+	padding-right: 25px;
 }
 
 .backet a {
@@ -93,6 +93,7 @@ a {
 }
 
 .order-registration { /* оформление заказа*/
+	width: 110px; 
 	background-color: #63a63e;
 	text-align: center;
 	margin: 0;
@@ -521,7 +522,7 @@ border-radius: 3px;
 }
 
 
-.manufacturer-list li: nth-child(4n) {
+.manufacturer-list li:nth-child(4n) {
 	margin-right: 0;
 }
 
@@ -544,7 +545,9 @@ border-radius: 3px;
 
 .catalog-item { /* убирает маркеры у списка с товара в кталоге*/
 	list-style: none;
-	border: solid 1px #e5e5e5;
+	border: solid 1px #eaeaea;
+	width: 220px;
+	margin-bottom: 20px;
 }
 .catalog-item:hover { /* тень при наведении на карточку товара*/
 	box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
@@ -750,6 +753,12 @@ border-radius: 3px;
 	text-transform: uppercase;
 }
 
+.personal-cabinet {
+	width: 299px;
+	position: absolute;
+	right: 15px;
+}
+
 .h-filter { /* заголовок для фильтр:, сортировка: цуна,по типу, по функционалу И СТИЛИ ДЛЯ КОНТЕЙНЕРА*/
 	font-size: 13px;
 	line-height: 18px;
@@ -757,6 +766,10 @@ border-radius: 3px;
 	color: #000000;
 	background-color: #f7f3ec;
 	width: 220px;
+	
+} 
+.h-filter a{
+	color: #000000;
 } 
 
 .filter-price { /* стили для ЦЕНА: в каталоге*/
@@ -764,7 +777,6 @@ border-radius: 3px;
 	font-size: 17px;
 	line-height: 30px;
 	font-style: normal;
-
 }
 
 .filter-manfacuring fieldset, /* убираю рамки с сортировки по производителям и питанию в каталоге*/
@@ -792,12 +804,12 @@ border-radius: 3px;
 }
 
 .user-navigation-catalog { /* стили для контейнера личного кабинета в кабинета*/
+	background: url("../img/icon-user.svg") no-repeat 15px;
 	display: flex;
-	width: 299px;
 	background-color: #ffffff;
-	width: 299px;
-	align-items: center;
-	/**/
+	width: 245px;
+	padding-left: 50px;
+	align-items: center; 
 	min-height: 45px; 
 }
 
@@ -807,6 +819,34 @@ border-radius: 3px;
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: normal;
+}
+
+.breadcrumbs {
+	margin-top: 20px;
+}
+
+.breadcrumbs li{
+	font-size: 13px;
+	line-height: 18px;
+	text-align: left;
+}
+
+.h-filter-sort {
+	text-transform: uppercase;
+	width: 700px;
+	background-color: #f7f3ec;
+	color: #000000;
+
+	/**/
+	min-height: 38px;
+}
+
+.sorting li{
+	list-style: none;
+}
+
+.sort-price {
+	color: red;
 }
 
 .button-company {/*кнопка о компании техномарт перед футером*/
@@ -851,8 +891,7 @@ margin-bottom: 86px;
 	padding: 0;
 	margin-right:120px;
 	margin-top: 75px;
-	/**/
-	min-height: 377px;
+	
 }
 
 .contacts {
@@ -860,8 +899,7 @@ margin-bottom: 86px;
 	margin: 0;
 	padding: 0;
 	margin-top: 74px;
-	/**/
-	min-height: 376px;
+	
 }
 .contacts img {
 	margin-bottom: 40px;
@@ -872,15 +910,13 @@ margin-bottom: 86px;
 	padding: 0;
 	margin-top: 85px;
 	margin-bottom: 0;
-	/**/
-	min-height: 196px;
+	
 }
 
 .footer-address {
 	margin-top: 27px;
 	width: 335px;
-	/**/
-	min-height:46px;
+	
 }
 
 .footer-navigation {
@@ -892,8 +928,7 @@ margin-bottom: 86px;
 	margin: 0;
 	margin-left: 390px;
 	margin-top: -110px;
-	/**/
-	min-height: 30px;
+	
 } 
 
 .footer-sections {
@@ -905,8 +940,7 @@ margin-bottom: 86px;
 	margin: 0;
 	margin-left: 415px;
 	margin-top: 30px;
-	/**/
-	min-height: 28px;
+
 }
 
 .footer-contacts {
@@ -920,8 +954,7 @@ margin-bottom: 86px;
 
 .footer-contacts { /* контейнер для вторго подвала */
 	display: flex;
-	/**/
-	min-height: 108px;
+
 }
 
 .first-footer {
@@ -993,8 +1026,6 @@ background-color: #32425c;
 	margin: 0;
 	padding: 0;
 	width: 220px;
-	margin: 0;
-	padding: 0;
 }
 
 .filter-manfacuring ul,
@@ -1021,12 +1052,6 @@ background-color: #32425c;
 	margin-right:0;
 }
 
-.catalog-item { /*контейнеры для списков с товарами в сетке*/
-	width: 220px;
-	min-height: 317px;
-	margin-bottom: 20px;
-}
-
 /*.wrapper {
 	background-color: rgba(255, 0, 0, 0.2);
 }*/
@@ -1049,22 +1074,24 @@ background-color: #32425c;
 	margin: 0;
 }
 
-.popular-perforators li{
+.popular-perforators li {
 	margin-right: 20px;
 }
 
 .backet-full { /* корзина в каталоге*/
 	text-align: center;
-	width: 150px;
+	width: 120px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	padding-left: 17px;
+	padding-left: 31px;
 	margin: 0;
-	background-color: #ee3643;
 	background: #ee3643 url("../img/icon-cart.svg") no-repeat 20% 40%;
 }
 	.exit {
 		background: #ffffff url("../img/icon-logout.svg") no-repeat;
+		position: absolute;
+		left: 122px;
+		top: 7px;
 	}
 
 	.main-nav_username {
